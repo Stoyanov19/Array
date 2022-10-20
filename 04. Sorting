@@ -1,0 +1,10 @@
+function sorting(inputArray) {
+    let lowestNum = inputArray.sort((a, b) => a - b);
+    let biggestNum = inputArray.sort((a, b) => b - a);
+    let nums = [];
+    while (inputArray.length > 0) {
+        nums.push(biggestNum.shift());
+        nums.push(lowestNum.pop());
+    }
+    console.log(nums.join(' '));
+}
