@@ -1,0 +1,7 @@
+function sumFirstAndLast(arr) {
+    let firstEl = Number(arr.shift());
+    let secondEl = Number(arr.pop());
+    let result = firstEl + secondEl;
+
+    console.log(result);
+}
