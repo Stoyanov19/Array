@@ -1,0 +1,7 @@
+function sortByTwoCriteria(array) {
+    let newArr = array.sort((a, b) => a.localeCompare(b))
+    newArr.sort((a, b) => a.length - b.length)
+
+    console.log(newArr.join('\n'))
+
+}
